@@ -16,7 +16,7 @@ const Sidebar = () => {
         {showSidebar ? <ImCancelCircle/> : <AiOutlineMenu/>}
       </div>
       {showSidebar && (
-        <div className='w-20  xl:w-[400px] flex flex-col gap-5 border-r p-4 border-r-gray-500 xl:border-0'>
+        <div className='w-20 justify-center xl:w-[400px] flex flex-col gap-5 border-r p-4 border-r-gray-500 xl:border-0'>
           <div className={normalLink}>
             <Link href='/'>
             <p className='text-2xl text-[#f51997]'>
