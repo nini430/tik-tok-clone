@@ -25,12 +25,6 @@ const Sidebar = () => {
            
             <span className='hidden xl:block text-gray-400'>For you</span></Link>
           </div>
-         {!userProfile && (
-          <div className='hidden xl:block'>
-            <p className='text-[#f51997]'>Please sign in to upload videos and comment on them</p>
-            <button className='bg-white border mt-2 border-[#f51997] text-[#f51997] w-full rounded-md px-3 py-2 transition hover:bg-[#f51997] hover:text-white'>Sign In</button>
-          </div>
-         )}
          <Discover/>
          <SuggestedAccounts/>
          <Footer/>

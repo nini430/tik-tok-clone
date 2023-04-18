@@ -47,7 +47,7 @@ const VideoCard:NextPage<IVideoCardProps> = ({post}) => {
       <div className='flex gap-4 relative'>
         <div onMouseOver={()=>{setIsHover(true)}}   className='rounded-3xl'>
           <Link href='/'>
-          <video ref={videoRef} src={post.video.asset.url} loop className='w-[200px] lg:w-[600px] h-[300px] bg-slate-200 rounded-md cursor-pointer'/></Link>
+          <video ref={videoRef} src={post.video.asset.url} loop className=' lg:w-[600px] h-[300px] bg-slate-200 rounded-md cursor-pointer'/></Link>
          
         </div>
         {
