@@ -29,3 +29,16 @@ export interface Video {
     }[]
 
 }
+
+export interface User {
+    _type:'user';
+    _id:string;
+    image:string;
+    username:string;
+}
+
+export interface AuthInitialState {
+    userProfile:User | null;
+    addUser:(user:User)=>void;
+    removeUser:()=>void;
+}
