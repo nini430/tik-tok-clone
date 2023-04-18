@@ -17,6 +17,7 @@ export const Footer = () => {
       <List items={footerList1}/>
       <List items={footerList2} mt/>
       <List items={footerList3} mt/>
+      <p className='text-gray-400'>2022 NG TikTik &copy;</p>
     </div>
   )
 }
