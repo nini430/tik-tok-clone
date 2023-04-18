@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {GoogleLogin,googleLogout} from '@react-oauth/google'
+import { createOrGetUser } from "@/utils";
 
 const Navbar = () => {
   const user=false;
@@ -13,7 +14,7 @@ const Navbar = () => {
         </div>
         <div>SEARCH</div>
         <div>
-          {user? <div>Logged in</div>: <GoogleLogin onSuccess={response=>console.log(response)} onError={()=>console.log('Error')}/>}
+          {user? <div>Logged in</div>: <GoogleLogin onSuccess={response=>createOrGetUser(response)} onError={()=>console.log('Error')}/>}
         </div>
     </div>
   )
